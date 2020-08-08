@@ -1,0 +1,75 @@
+body {
+  font-size: 14px;
+  font-family: $secondaryFont;
+  font-weight: 400;
+  margin: 0;
+
+  ::selection {
+    background-color: $primaryColor;
+    color: #fff;
+  }
+
+  .custom-select {
+    &:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-color: #ccc;
+    }
+  }
+
+  .label {
+    font-size: 12px;
+    font-weight: 800;
+    opacity: 0.8;
+  }
+
+  textarea {
+    border-color: #ccc;
+
+    &:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-color: #ccc;
+      outline: none;
+    }
+  }
+
+  a {
+    color: #111;
+    @include transition(all, 0.5s, ease-in-out);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  button {
+    &:focus {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:active {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+}
+
